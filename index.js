@@ -20,8 +20,8 @@ import websocketService from './src/services/websocketService.js';
 import etaCalculationService from './src/services/etaCalculationService.js';
 import gpsDataProcessor from './src/services/gpsDataProcessor.js';
 
-const admin = require('firebase-admin');
-const serviceAccount = require('./bustracker-6d9b1-firebase-adminsdk-fbsvc-77a00f25bb.json');
+import admin from 'firebase-admin';
+import serviceAccount from './bustracker-6d9b1-firebase-adminsdk-fbsvc-77a00f25bb.json' with { type: 'json' };
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
